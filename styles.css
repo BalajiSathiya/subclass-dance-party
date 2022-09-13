@@ -1,27 +1,153 @@
-body, html{
-  height:100%;
+html{
+  background-color: black;
 }
 body{
   margin: 0px;
-  background-color:#444;
   font-size: 18px;
+  height: 100%;
 }
 body, a:link, a:visited, a:active{
-  color: lightblue;
+  color: rgb(10, 233, 85);
+  text-decoration: none;
 }
-.title, .addDancerButton{
-  padding:5px 12px;
-  float:right;
-}
+/* #app{
+  position: relative;
+  background-color: black;
+} */
 .topbar{
-  height:32px;
-  background-color: #555;
+  height:150px;
+  display:flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  text-align: center;
+
+  background-color: white;
+}
+#Heading{
+  display: block;
+  height: 163px;
+  text-align: center;
+  font-family: fantasy;
+  font-size: 150px;
+  padding: 0px 1100px;
+}
+.buttonzone{
+  height: 70px;
+
+  position: relative;
+  top: 300px;
+  width:2560px;
+}
+.B1{
+  position: absolute;
+  left: 400px;
+  top: 60px;
+  z-index: 1;
+}
+.B2{
+  position: absolute;
+  left: 767px;
+  top: 60px;
+  z-index: 1;
 }
 .title{
-  background-color: #777;
+  position: absolute;
+  right: 1070px;
+  top: 110px;
+  z-index: 1;
+  padding: 10px 10px;
+  width: 244px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  font-family: fantasy;
+  font-size: 35px;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  white-space: nowrap;
 }
+.B3{
+  position: absolute;
+  right: 767px;
+  top: 60px;
+  z-index: 1;
+}
+.B4{
+  position: absolute;
+  right: 400px;
+  top: 60px;
+  z-index: 1;
+}
+.addDancerButton {
+  margin-top: 100px;
+  padding: 1.3em 3em;
+  width: 244px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.addDancerButton:hover {
+  background-color: #23c483;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.addDancerButton:active {
+  transform: translateY(-1px);
+}
+
 .dancer{
   border:10px solid red;
   border-radius:10px;
   position:absolute;
+  z-index: 1;
+}
+.background{
+  position: absolute;
+  top:220px;
+  left:320px;
+
+  grid-column: 1 / span 3;
+  grid-row: 2 / span 4;
+  min-width: auto;
+  min-height: auto;
+  align-items: center;
+  z-index: 0;
+}
+.bird{
+  height: 20px;
+  z-index: 1;
+}
+.D1{
+  position: absolute;
+  top: 400px;
+  left: 1300px;
+}
+.D2{
+  position: absolute;
+  top: 400px;
+  left: 1400px;
+}
+.D3{
+  position: absolute;
+  top: 400px;
+  left: 1500px;
 }
