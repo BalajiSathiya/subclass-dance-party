@@ -6,26 +6,38 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
     <script src="src/dancer.js"></script>
     <script src="src/blinkyDancer.js"></script>
-    <!-- <script src="src/fightDancer.js"></script>
-    <script src="src/popDancer.js"></script> -->
+    <script src="src/flipDancer.js"></script>
+    <script src="src/sizeDancer.js"></script>
+    <script src="src/init.js"></script>
+    <audio style="display: none" controls autoplay muted>
+      <source style="display: hidden" src="Resources/BGM.mp3" type="audio/mp3">
+    </audio>
   </head>
   <body>
     <div id="app">
     <div class="topbar">
+      <img src="Resources/PenguLove.gif" id="Hearts" class = "H2">
+      <img src="Resources/PenguLove.gif" id="Hearts2" class = "H1">
       <div id="Heading">El RIO</div>
     </div>
     <div class="buttonZone">
 
 
-      <a href="#" class="addDancerButton B1" data-dancer-maker-function-name="makeBlinkyDancer">Uncover Hidden Birds</a>
-      <a href="#" class="addDancerButton B2" data-dancer-maker-function-name="makeBlinkyDancer">Align the Birds</a>
       <span class="title">object dance party</span>
-      <a href="#" class="addDancerButton B3" data-dancer-maker-function-name="makeBlinkyDancer">Work in Progress</a>
-      <a href="#" class="addDancerButton B4" data-dancer-maker-function-name="makeBlinkyDancer">Work in Progress</a>    </div>
-    <script src="src/init.js"></script>
-    <img src="Resources/bird.gif" class="bird D1">
-    <img src="Resources/penguin-hi.gif" class="bird D2">
-    <img src="Resources/parrot1.gif" class="bird D3">
+        <a href="#" class="align DancerButton B1" data-dancer-maker-function-name="makeBlinkyDancer">Align Birds</a>
+        <a href="#" class="stop DancerButton B2" data-dancer-maker-function-name="FlipDancer">Stop Animation (WIP)</a>
+        <a href="#" class="tester DancerButton B3" data-dancer-maker-function-name="SizeDancer">locked Max Birds to 8</a>
+        <a href="#" class="B4 remove DancerButton " data-dancer-maker-function-name="SizeDancer">Remove Dancers</a>
+        <!-- <a href="#" class="addDancerButton B2" data-dancer-maker-function-name="makeBlinkyDancer">Align the Birds</a>
+        <a href="#" class="addDancerButton B3" data-dancer-maker-function-name="makeBlinkyDancer">Uncover Hidden Birds</a>
+        <a href="#" class="addDancerButton B4" data-dancer-maker-function-name="makeBlinkyDancer">Work in Progress</a> -->
+    </div>
+    <div class ="dancefloor"></div>
+    <div class="Pseudo P1"></div>
+    <div class="Pseudo P2"></div>
+    <div class="Pseudo P3"></div>
+    <div class="Pseudo P4"></div>
+    <!-- <img src="Resources/bird.gif" class="bird D1"> -->
     <img src="Resources/background.png" class="background">
 
     </div>

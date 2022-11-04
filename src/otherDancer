@@ -1,0 +1,13 @@
+// var SizeDancer = function(top, left, timeBetweenSteps) {
+//   this.$node = $('<span class="dancer"><img src="Resources/penguin-hi.gif" class="bird D3"></span>');
+//   makeDancer.call(this, top, left, timeBetweenSteps);
+
+// };
+
+// SizeDancer.prototype = Object.create(makeDancer.prototype);
+// SizeDancer.prototype.constructor = SizeDancer;
+
+// SizeDancer.prototype.step = function() {
+//   makeDancer.prototype.step.call(this);
+//   this.$node.toggle();
+// }

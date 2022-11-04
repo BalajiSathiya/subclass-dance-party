@@ -1,5 +1,7 @@
 html{
   background-color: black;
+  height: 100%;
+  width: 100%;
 }
 body{
   margin: 0px;
@@ -25,13 +27,26 @@ body, a:link, a:visited, a:active{
 
   background-color: white;
 }
+#Hearts, #Hearts2{
+  display:none;
+}
+.H1{
+  position: absolute;
+  left: 505px;
+}
+.H2{
+  position: absolute;
+  right: 505px;
+  transform: scaleX(-1);
+}
 #Heading{
   display: block;
   height: 163px;
+  width: 100%;
   text-align: center;
   font-family: fantasy;
   font-size: 150px;
-  padding: 0px 1100px;
+  /* padding: 0px 1050px; */
 }
 .buttonzone{
   height: 70px;
@@ -42,23 +57,23 @@ body, a:link, a:visited, a:active{
 }
 .B1{
   position: absolute;
-  left: 400px;
+  left: 369.33px;
   top: 60px;
   z-index: 1;
 }
 .B2{
   position: absolute;
-  left: 767px;
+  left: 734.66px;
   top: 60px;
   z-index: 1;
 }
 .title{
   position: absolute;
-  right: 1070px;
-  top: 110px;
+  right: 1100px;
+  top: 160px;
   z-index: 1;
-  padding: 10px 10px;
-  width: 244px;
+  padding: 5px 10px;
+  width: 340px;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 2.5px;
@@ -72,17 +87,18 @@ body, a:link, a:visited, a:active{
 }
 .B3{
   position: absolute;
-  right: 767px;
+  right: 734.66px;
   top: 60px;
   z-index: 1;
 }
 .B4{
   position: absolute;
-  right: 400px;
+  right: 369.33px;
   top: 60px;
   z-index: 1;
 }
-.addDancerButton {
+.DancerButton {
+  position: absolute;
   margin-top: 100px;
   padding: 1.3em 3em;
   width: 244px;
@@ -103,27 +119,26 @@ body, a:link, a:visited, a:active{
   outline: none;
 }
 
-.addDancerButton:hover {
+.DancerButton:hover {
   background-color: #23c483;
   box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
   color: #fff;
   transform: translateY(-7px);
 }
 
-.addDancerButton:active {
+.DancerButton:active {
   transform: translateY(-1px);
 }
 
 .dancer{
-  border:10px solid red;
-  border-radius:10px;
   position:absolute;
-  z-index: 1;
 }
 .background{
   position: absolute;
   top:220px;
   left:320px;
+  height: 1200px;
+  width: 1920px;
 
   grid-column: 1 / span 3;
   grid-row: 2 / span 4;
@@ -133,21 +148,93 @@ body, a:link, a:visited, a:active{
   z-index: 0;
 }
 .bird{
-  height: 20px;
+  position: absolute;
+  height: 60px;
+  width: 60px;
   z-index: 1;
 }
-.D1{
+
+.parrot {
   position: absolute;
-  top: 400px;
-  left: 1300px;
+}
+
+.parrot img {
+  animation: rotation 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-359deg)
+  }
+}
+
+.penguin{
+  position: absolute;
+  animation-play-state: paused;
+}
+
+.penguin img {
+  transform-origin: center;
+  animation-play-state: running;
+  animation: grow 1750ms ease-in-out infinite alternate;
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(0.4);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+.D1{
+
+}
+.D1:hover{
+
+
 }
 .D2{
-  position: absolute;
-  top: 400px;
-  left: 1400px;
+
+
+}
+.D2:hover{
+
 }
 .D3{
+
+
+}
+.Pseudo{
   position: absolute;
-  top: 400px;
-  left: 1500px;
+  padding: 300px 480px;
+  top: 220px;
+
+  z-index: 5;
+
+}
+.P1{
+  position: absolute;
+  top: 220px;
+  left: 320px;
+}
+.P2{
+  position: absolute;
+  top: 220px;
+  left: 1280px;
+}
+.P3{
+  position: absolute;
+  top: 820px;
+  left: 320px;
+}
+.P4{
+  position: absolute;
+  top: 820px;
+  left: 1280px;
 }
